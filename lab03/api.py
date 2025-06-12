@@ -5,7 +5,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
 from flask import Flask, request, jsonify
-from cipher.rsa.rsa_cipher import RSACipher
+from cipher.rsa import RSACipher
 from cipher.ecc import ECCCipher
 
 app = Flask(__name__)
